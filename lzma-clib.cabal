@@ -1,5 +1,5 @@
 name:                lzma-clib
-version:             5.2.1
+version:             5.2.1.1
 license:             PublicDomain
 license-file:        LICENSE
 author:              Lasse Collin
