@@ -1,5 +1,5 @@
 name:                lzma-clib
-version:             5.2.1.1
+version:             5.2.2
 license:             PublicDomain
 license-file:        LICENSE
 author:              Lasse Collin
@@ -15,7 +15,7 @@ description:
    by LZMA\/XZ bindings such as </package/lzma lzma>.
    .
    The @liblzma@ code contained in this package version has been
-   extracted from the <http://tukaani.org/xz/ XZ Utils> 5.2.1 release.
+   extracted from the <http://tukaani.org/xz/ XZ Utils> 5.2.2 release.
    .
    NOTE: This package is only buildable on Windows.
 
@@ -39,6 +39,10 @@ extra-source-files:
   src/liblzma/rangecoder/*.h
   src/liblzma/simple/*.c
   src/liblzma/simple/*.h
+
+source-repository head
+  type:     git
+  location: https://github.com/hvr/lzma-clib.git
 
 library
   default-language:    Haskell2010
