@@ -1,6 +1,6 @@
 cabal-version:       2.2
 name:                lzma-clib
-version:             5.2.2
+version:             5.2.2.1
 license-file:        LICENSE
 author:              Lasse Collin
 maintainer:          hvr@gnu.org
