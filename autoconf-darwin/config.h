@@ -24,10 +24,10 @@
 /* #undef HAVE_BYTESWAP_H */
 
 /* Define to 1 if the system has the type `CC_SHA256_CTX'. */
-#define HAVE_CC_SHA256_CTX 1
+/* #undef HAVE_CC_SHA256_CTX */
 
 /* Define to 1 if you have the `CC_SHA256_Init' function. */
-#define HAVE_CC_SHA256_INIT 1
+/* #undef HAVE_CC_SHA256_INIT */
 
 /* Define to 1 if you have the MacOS X function CFLocaleCopyCurrent in the
    CoreFoundation framework. */
@@ -47,7 +47,7 @@
 #define HAVE_CHECK_SHA256 1
 
 /* Define to 1 if you have the `clock_gettime' function. */
-#define HAVE_CLOCK_GETTIME 1
+/* #undef HAVE_CLOCK_GETTIME */
 
 /* Define to 1 if you have the <CommonCrypto/CommonDigest.h> header file. */
 #define HAVE_COMMONCRYPTO_COMMONDIGEST_H 1
@@ -58,7 +58,7 @@
 
 /* Define to 1 if you have the declaration of `CLOCK_MONOTONIC', and to 0 if
    you don't. */
-#define HAVE_DECL_CLOCK_MONOTONIC 1
+/* #undef HAVE_DECL_CLOCK_MONOTONIC */
 
 /* Define to 1 if you have the declaration of `program_invocation_name', and
    to 0 if you don't. */
