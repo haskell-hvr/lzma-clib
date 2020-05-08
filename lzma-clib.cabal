@@ -1,13 +1,12 @@
+cabal-version:       2.2
 name:                lzma-clib
 version:             5.2.2
-license:             PublicDomain
 license-file:        LICENSE
 author:              Lasse Collin
 maintainer:          hvr@gnu.org
 bug-reports:         https://github.com/hvr/lzma/issues
 category:            Codec
 build-type:          Simple
-cabal-version:       >=1.10
 synopsis:            liblzma C library and headers for use by LZMA bindings
 
 description:
@@ -20,6 +19,8 @@ description:
    NOTE: This package is only buildable on Windows.
 
 extra-source-files:
+  autoconf-darwin/config.h
+  autoconf-linux/config.h
   autoconf-win32/config.h
   src/common/*.c
   src/common/*.h
@@ -124,8 +125,12 @@ library
 
   if os(windows)
     include-dirs: autoconf-win32
+  elif os(darwin)
+    include-dirs: autoconf-darwin
+  elif os(linux)
+    include-dirs: autoconf-linux
   else
-    build-depends: only-buildable-on-windows<0
+    build-depends: unbuildable<0
     buildable: False
 
   include-dirs:
